@@ -1,0 +1,24 @@
+{
+  "name": "angular-qiniu-imageview2",
+  "main": "angular-qiniu-imageview2.js",
+  "version": "0.1.0",
+  "authors": [
+    "L42y <423300@gmail.com>"
+  ],
+  "description": "AngularJS component for preprocessing image URL from qiniu.com(七牛云存储)",
+  "keywords": [
+    "qiniu"
+  ],
+  "license": "WTFPL",
+  "homepage": "https://github.com/L42y/angular-qiniu-imageview2",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "get-device-pixel-ratio": "~1.0.0"
+  }
+}
