@@ -14,12 +14,14 @@ angular.module('l42y.qiniu.imageview2', [
       var qualityString = quality ? '/quality/' + quality : '';
 
       $attrs.$observe('qiniuImageview2', function (src) {
-        var imageSrc = src + '?imageView2/' + mode +
-              '/w/' + $attrs.width * pixelRatio +
-              '/h/' + $attrs.height * pixelRatio +
-              qualityString + formatString;
+        if (src.length) {
+          var imageSrc = src + '?imageView2/' + mode +
+                '/w/' + $attrs.width * pixelRatio +
+                '/h/' + $attrs.height * pixelRatio +
+                qualityString + formatString;
 
-        $attrs.$set('src', imageSrc);
+          $attrs.$set('src', imageSrc);
+        }
       });
     }
   };
