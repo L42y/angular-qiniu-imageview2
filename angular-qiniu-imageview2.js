@@ -2,7 +2,7 @@ angular.module('l42y.qiniu.imageview2', [
 ]).directive('qiniuImageview2', ['$window', function (
   $window
 ) {
-  var pixelRatio = $window.getDevicePixelRatio();
+  var pixelRatio = $window.getDevicePixelRatio().toFixed();
 
   return {
     restrict: 'A',
