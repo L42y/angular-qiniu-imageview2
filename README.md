@@ -6,9 +6,11 @@ AngularJS component for preprocessing image URL from qiniu.com(七牛云存储)
 
 1. `bower install --save L42y/angular-qiniu-imageview2`
 
-2. including `angular-qiniu-imageview2.js` script file provided by this component into your application
+2. including script file provided by dependency [angular-qiniu-image](https://github.com/L42y/angular-qiniu-image) into your application
 
-3. adding `l42y.qiniu.imageview2` as a module dependency to your application
+3. including `angular-qiniu-imageview2.js` script file provided by this component into your application
+
+4. adding `l42y.qiniu.image` and `l42y.qiniu.imageview2` as a module dependency to your application
 
 ## Usage
 
