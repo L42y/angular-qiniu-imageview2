@@ -1,7 +1,7 @@
 {
   "name": "angular-qiniu-imageview2",
   "main": "angular-qiniu-imageview2.js",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "authors": [
     "L42y <423300@gmail.com>"
   ],
@@ -19,6 +19,7 @@
     "tests"
   ],
   "dependencies": {
+    "angular-qiniu-image": "~1.0.0",
     "get-device-pixel-ratio": "~1.0.0"
   }
 }
