@@ -24,6 +24,12 @@ AngularJS component for preprocessing image URL from qiniu.com(七牛云存储)
      qiniu-imageview2-quality="100">
 ```
 
+## Changelog
+
+- 1.0.0
+
+    use `qiniu-image` instead of `qiniu-imageview2` for setting image URL
+
 ## License
 
 [WTFPL](http://wtfpl.org)
