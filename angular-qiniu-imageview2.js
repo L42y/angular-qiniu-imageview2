@@ -16,7 +16,7 @@ angular.module('l42y.qiniu.imageview2', [
 
       var formatStr = format ? '/format/' + format : '';
       var qualityStr = quality ? '/quality/' + quality : '';
-      var interlaceStr = interlace ? '/interlace/1' : '';
+      var interlaceStr = angular.isDefined(interlace) ? '/interlace/1' : '';
 
       var fop = 'imageView2/' + mode +
             '/w/' + $attrs.width * pixelRatio +
