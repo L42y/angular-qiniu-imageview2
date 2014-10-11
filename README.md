@@ -20,7 +20,7 @@ AngularJS component for preprocessing image URL from qiniu.com(七牛云存储)
      qiniu-image="{{ object.image.url }}"
      qiniu-imageview2
      qiniu-imageview2-mode="1"
-     qiniu-imageview2-format="webp"
+     qiniu-imageview2-format="webp,jpg" <!-- use a secondary fallback format -->
      qiniu-imageview2-quality="100">
 ```
 
