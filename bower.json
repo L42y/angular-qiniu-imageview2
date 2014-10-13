@@ -19,7 +19,7 @@
   ],
   "dependencies": {
     "angular-webp": "L42y/angular-webp#~0.2.0",
-    "angular-qiniu-image": "L42y/angular-qiniu-image#~2.0.0",
+    "angular-qiniu-image": "L42y/angular-qiniu-image#~2.1.0",
     "get-device-pixel-ratio": "~1.0.0"
   }
 }
