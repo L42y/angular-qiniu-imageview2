@@ -12,17 +12,20 @@ angular.module('l42y.qiniu.imageview2', [
     require: '^qiniuImage',
     restrict: 'A',
     link: function ($scope, $element, $attrs, qiniu) {
+      var width = $attrs.width;
+      var height = $attrs.height;
       var mode = $attrs.qiniuImageview2Mode;
       var format = $attrs.qiniuImageview2Format;
       var quality = $attrs.qiniuImageview2Quality;
       var interlace = $attrs.qiniuImageview2Interlace;
 
+      var widthStr = width ? '/w/' + $attrs.width * pixelRatio : '';
+      var heightStr = height ? '/h/' + $attrs.height * pixelRatio : '';
       var qualityStr = quality ? '/quality/' + quality : '';
       var interlaceStr = angular.isDefined(interlace) ? '/interlace/1' : '';
 
       var fop = identifier + '/' + mode +
-            '/w/' + $attrs.width * pixelRatio +
-            '/h/' + $attrs.height * pixelRatio +
+            widthStr + heightStr +
             qualityStr + interlaceStr;
 
       var formats = format ? format.split(',') : [];
